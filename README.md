@@ -22,3 +22,35 @@ cargo build --release
 
 The compiled binary will be available at `target/release/mzpeak_prototyping`.
 
+## Using `mzpeak_prototyping`
+
+```
+mzpeak_prototyping convert MZML_FILE_PATH
+```
+
+The command converts the .mzml file specified by MZML_FILE_PATH to a .mzpeak file in the same directory as MZML_FILE_PATH.
+
+## Reading .mzpeak file
+
+To check if the .mzpeak file is readable, run the following command.
+
+```
+cargo run --example read -- small.mzpeak
+```
+
+## Installing mzpeak Python package
+
+```
+cd python
+pip install .
+```
+
+## Using mzpeak Python package
+
+```
+pip install scipy
+```
+
+```
+import mzpeak
+```
